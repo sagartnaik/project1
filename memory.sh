@@ -1,4 +1,4 @@
-!/bin/bash
+/bin/bash
 space=`df -h . | awk -F " " 'NR==2 { print $5 }' | sed 's/%/ /g'`
 
 if [ $space -ge 26 ]
